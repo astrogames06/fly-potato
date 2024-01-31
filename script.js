@@ -100,7 +100,7 @@ function draw() {
     text(points, 400 / 2, 100);
     console.log(localStorage.getItem("best"))
 
-    if (player.y > 400 - 30) {
+    if (player.y > 400 - 30 || player.y < 30) {
         dead = true;
     }
 
